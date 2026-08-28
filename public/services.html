@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services — Precision Dental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dental fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+      Precision Dental
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" style="border-color:var(--border);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="book-appointment.html">Book Appointment</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin-dashboard.html">Doctor Dashboard</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-teal" href="book-appointment.html">Book a Visit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section pb-3">
+  <div class="container">
+    <span class="eyebrow"><i class="bi bi-grid"></i> Full treatment menu</span>
+    <h1 class="display-5 fw-bold mt-3 mb-2">Advanced Dental Excellence</h1>
+    <p class="text-muted-custom fs-5 mb-4" style="max-width: 560px;">
+      From routine cleanings to full-mouth reconstruction — every treatment backed by
+      transparent pricing and a clear plan.
+    </p>
+
+    <div class="d-flex flex-wrap gap-2 mb-5" id="filterBar">
+      <button class="filter-pill active" data-filter="all">All Services</button>
+      <button class="filter-pill" data-filter="general">General</button>
+      <button class="filter-pill" data-filter="cosmetic">Cosmetic</button>
+      <button class="filter-pill" data-filter="ortho">Orthodontics</button>
+      <button class="filter-pill" data-filter="surgery">Surgery</button>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5">
+  <div class="container">
+    <div class="row g-4" id="serviceGrid">
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="general">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-droplet-half"></i></div>
+            <span class="service-price">$120</span>
+          </div>
+          <h5 class="mb-2">Routine Cleaning &amp; Exam</h5>
+          <p class="text-muted-custom small mb-3">Full oral exam, polish, and plaque removal with digital X-rays as needed.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>45-minute visit</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Fluoride treatment included</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>Same-week booking</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="general">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-shield-plus"></i></div>
+            <span class="service-price">$95</span>
+          </div>
+          <h5 class="mb-2">Cavity Fillings</h5>
+          <p class="text-muted-custom small mb-3">Tooth-colored composite fillings placed in a single visit.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Local anesthesia included</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Mercury-free materials</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>Lifetime workmanship warranty</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="surgery general">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-lightning-charge"></i></div>
+            <span class="service-price">$180</span>
+          </div>
+          <h5 class="mb-2">Emergency Dentistry</h5>
+          <p class="text-muted-custom small mb-3">Same-day relief for pain, trauma, or infection — no referral needed.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>24/7 phone triage</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Walk-ins welcome</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>On-site digital imaging</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="cosmetic">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-stars"></i></div>
+            <span class="service-price">$350</span>
+          </div>
+          <h5 class="mb-2">Professional Whitening</h5>
+          <p class="text-muted-custom small mb-3">In-office whitening for up to 8 shades brighter in one session.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>60-minute treatment</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Take-home touch-up kit</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>Sensitivity-free formula</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="cosmetic">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-gem"></i></div>
+            <span class="service-price">$850</span>
+          </div>
+          <h5 class="mb-2">Porcelain Veneers</h5>
+          <p class="text-muted-custom small mb-3">Custom-shaded veneers to reshape and brighten your smile, per tooth.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Digital smile preview</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>2-visit process</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>10-year warranty</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="ortho">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-diagram-3"></i></div>
+            <span class="service-price">$2,900</span>
+          </div>
+          <h5 class="mb-2">Clear Aligners</h5>
+          <p class="text-muted-custom small mb-3">Invisible aligner therapy with a full digital treatment plan.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>3D scan, no messy molds</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Monthly progress check-ins</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>6–14 month average treatment</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="ortho">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-braces"></i></div>
+            <span class="service-price">$3,400</span>
+          </div>
+          <h5 class="mb-2">Traditional Braces</h5>
+          <p class="text-muted-custom small mb-3">Metal or ceramic braces for complex bite and alignment correction.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Financing plans available</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Free adjustment visits</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>Ideal for teens &amp; adults</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="surgery">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-scissors"></i></div>
+            <span class="service-price">$1,600</span>
+          </div>
+          <h5 class="mb-2">Wisdom Tooth Removal</h5>
+          <p class="text-muted-custom small mb-3">Surgical extraction with sedation options, per tooth.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>IV sedation available</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Post-op care kit included</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>Recovery follow-up call</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-item" data-cat="surgery">
+        <div class="service-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-tile mb-0"><i class="bi bi-nut"></i></div>
+            <span class="service-price">$2,200</span>
+          </div>
+          <h5 class="mb-2">Dental Implants</h5>
+          <p class="text-muted-custom small mb-3">Titanium implant and crown restoration for a single missing tooth.</p>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>3D-guided placement</div>
+          <div class="check-line mb-1"><i class="bi bi-check-circle-fill"></i>Lifetime implant warranty</div>
+          <div class="check-line"><i class="bi bi-check-circle-fill"></i>3–6 month full process</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Not sure banner -->
+<section class="pb-5">
+  <div class="container">
+    <div class="card-dental">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="eyebrow"><i class="bi bi-question-circle"></i> Free consult</span>
+          <h3 class="mt-3 mb-2">Not sure which service is right for you?</h3>
+          <p class="text-muted-custom mb-4">Book a free 15-minute consultation and we'll build a treatment plan tailored to your smile and budget.</p>
+          <a href="book-appointment.html" class="btn btn-teal">Book Free Consultation</a>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-2">
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=500&auto=format&fit=crop" class="w-100 h-100 object-fit-cover rounded-3" style="min-height:140px;object-fit:cover;" alt="Dental consultation">
+            </div>
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=500&auto=format&fit=crop" class="w-100 h-100 object-fit-cover rounded-3" style="min-height:140px;object-fit:cover;" alt="Dentist consulting patient">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-dental">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <span>© 2026 Precision Dental. All rights reserved.</span>
+    <div class="d-flex gap-3">
+      <a href="index.html">Home</a>
+      <a href="book-appointment.html">Book Appointment</a>
+      <a href="admin-dashboard.html">Doctor Dashboard</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

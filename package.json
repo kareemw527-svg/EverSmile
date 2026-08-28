@@ -1,0 +1,15 @@
+{
+  "name": "precision-dental",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Precision Dental Node.js website",
+  "scripts": {
+    "start": "npm --prefix node start",
+    "dev": "npm --prefix node run dev",
+    "data:reset": "npm --prefix node run data:reset",
+    "install:node": "npm --prefix node install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
