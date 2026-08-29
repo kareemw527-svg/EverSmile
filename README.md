@@ -1,6 +1,6 @@
-# EverSmile — Dark Mode Website
+# EverSmile
 
-A 4-page dark-mode dental clinic site built with **HTML5, CSS3, and Bootstrap 5**.
+A modern dental clinic website built with **HTML5, CSS3, and Bootstrap 5**.
 
 ## Pages
 - `index.html` — Home (hero, features, testimonials, CTA)
