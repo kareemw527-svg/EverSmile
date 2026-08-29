@@ -1,0 +1,16 @@
+<svg width="220" height="52" viewBox="0 0 220 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="everSmileGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7EF0D2"/>
+      <stop offset="100%" stop-color="#4FB3FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="48" height="48" rx="14" fill="url(#everSmileGrad)"/>
+  <path d="M15 29C18.5 33.5 24 36 30 36C36 36 41.5 33.5 45 29" stroke="#0B1220" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 22H21" stroke="#0B1220" stroke-width="4" stroke-linecap="round"/>
+  <path d="M39 22H42" stroke="#0B1220" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="24" cy="20" r="2.5" fill="#0B1220"/>
+  <circle cx="36" cy="20" r="2.5" fill="#0B1220"/>
+  <path d="M20 13L26 10L30 14L36 10L42 13" stroke="#0B1220" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <text x="64" y="33" font-family="Sora, Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#EAF7FF">EverSmile</text>
+</svg>

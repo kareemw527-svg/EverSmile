@@ -1,4 +1,4 @@
-# Precision Dental — Dark Mode Website
+# EverSmile — Dark Mode Website
 
 A 4-page dark-mode dental clinic site built with **HTML5, CSS3, and Bootstrap 5**.
 
@@ -11,7 +11,7 @@ A 4-page dark-mode dental clinic site built with **HTML5, CSS3, and Bootstrap 5*
 
 ## Structure
 ```
-precision-dental/
+ever-smile/
 ├── public/
 │   ├── index.html
 │   ├── services.html

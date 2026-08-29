@@ -174,5 +174,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`Precision Dental is running at http://${host}:${port}`);
+  console.log(`EverSmile is running at http://${host}:${port}`);
 });

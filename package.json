@@ -1,8 +1,8 @@
 {
-  "name": "precision-dental",
+  "name": "ever-smile",
   "version": "1.0.0",
   "private": true,
-  "description": "Precision Dental Node.js website",
+  "description": "EverSmile Node.js website",
   "scripts": {
     "start": "npm --prefix node start",
     "dev": "npm --prefix node run dev",

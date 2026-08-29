@@ -1,4 +1,4 @@
-# Precision Dental Backend
+# EverSmile Backend
 
 This folder contains the Node.js server and local appointment data.
 
@@ -10,11 +10,14 @@ From the project root:
 npm start
 ```
 
-For automatic restarts while editing:
+For automatic restarts when editing the backend, frontend, or appointment data:
 
 ```powershell
 npm run dev
 ```
+
+Keep this process running while developing. Refresh the browser after editing
+HTML or CSS to see the updated page.
 
 The server reads `HOST` and `PORT` from the environment. Copy `.env.example`
 for reference, or set a value directly in PowerShell:
