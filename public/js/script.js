@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const apiFetch = window.everSmileRequest || ((...args) => fetch(...args));
 
   /* ---------- Services page: category filter ---------- */
   const filterBar = document.getElementById('filterBar');
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const submitButton = bookingForm.querySelector('button[type="submit"]');
       submitButton.disabled = true;
       try {
-        const response = await fetch('/api/appointments', {
+        const response = await apiFetch('/api/appointments', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   if (appointmentsBody) {
-    fetch('/api/appointments')
+    apiFetch('/api/appointments')
       .then(response => response.json())
       .then(appointments => {
         dashboardAppointments = appointments;
@@ -153,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!button) return;
       const isDelete = Boolean(deleteButton);
       if (isDelete && !window.confirm('Delete this appointment?')) return;
-      const response = await fetch(`/api/appointments/${button.dataset.id}`, { method: isDelete ? 'DELETE' : 'PATCH', headers: { 'Content-Type': 'application/json' }, body: isDelete ? undefined : JSON.stringify({ status: button.dataset.status }) });
+      const response = await apiFetch(`/api/appointments/${button.dataset.id}`, { method: isDelete ? 'DELETE' : 'PATCH', headers: { 'Content-Type': 'application/json' }, body: isDelete ? undefined : JSON.stringify({ status: button.dataset.status }) });
       if (response.ok) {
         dashboardAppointments = dashboardAppointments.filter(appointment => appointment.id !== button.dataset.id);
         if (!isDelete) {
@@ -220,3 +221,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
