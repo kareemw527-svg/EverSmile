@@ -465,3 +465,7 @@ table.table-dental tr:last-child td { border-bottom: none; }
   .hero-section { padding: 5rem 0 3rem; text-align: center; }
   .stat-strip { justify-content: center; }
 }
+
+.portfolio-demo-notice { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1100; padding: 10px 20px; background: #132a31; color: #d8e9ee; border-top: 1px solid #3b6d74; text-align: center; font: 12px/1.6 system-ui, sans-serif; }
+.portfolio-demo-notice a { color: #48eed5; white-space: nowrap; margin-left: 8px; }
+body:has(.portfolio-demo-notice) { padding-bottom: 70px; }
