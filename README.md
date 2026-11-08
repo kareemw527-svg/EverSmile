@@ -1,65 +1,79 @@
 # EverSmile
 
-A modern dental clinic website built with **HTML5, CSS3, and Bootstrap 5**.
+**Dental clinic website and appointment-management demo — built by Kareem Wael.**
 
-## Pages
-- `index.html` — Home (hero, features, testimonials, CTA)
-- `services.html` — Our Services (filterable service catalog)
-- `book-appointment.html` — Book Appointment (service, date/time, patient details, live summary)
-- `admin-dashboard.html` — Doctor Dashboard (live patients, revenue, activity, and appointment actions)
-- `assistant-dashboard.html` — Assistant Dashboard (live schedule, patient queue, and front-desk actions)
+[**View the website →**](https://kareemw527-svg.github.io/EverSmile/) · [Contact Kareem](mailto:kareemw527@gmail.com)
 
-## Structure
-```
-ever-smile/
-├── public/
-│   ├── index.html
-│   ├── services.html
-│   ├── book-appointment.html
-│   ├── admin-dashboard.html
-│   ├── assistant-dashboard.html
-│   ├── css/
-│   │   └── style.css    # design tokens + all custom styles
-│   └── js/
-│       └── script.js    # frontend interactions and API calls
-├── package.json            # root Node.js commands
-├── node/
-│   ├── package.json       # Node.js project metadata and scripts
-│   ├── package-lock.json  # locked dependency state
-│   ├── server.js          # dependency-free API and static file server
-│   ├── README.md           # backend API guide
-│   ├── .env.example       # server configuration reference
-│   ├── scripts/
-│   │   └── reset-data.js   # reset local appointment data
-│   └── data/
-│       └── appointments.json
-└── README.md
-```
+![EverSmile homepage](docs/images/eversmile-preview.jpg)
 
-## Tech
-- Bootstrap 5.3.3 (CDN)
-- Bootstrap Icons 1.11.3 (CDN)
-- Chart.js 4.4.4 (CDN, dashboard only)
-- Google Fonts: Sora (display), Inter (body), JetBrains Mono (data/labels)
+A responsive full stack project connecting a dental services website, appointment booking flow, and doctor/assistant dashboards to a dependency-free Node.js API.
 
-## How to run
-Run the site through Node.js:
+## Try the website
 
-```bash
+The public GitHub Pages version is an **interactive portfolio demonstration**. It uses fictional sample appointments and keeps demo changes in this browser tab's session storage. No clinic is contacted, no SMS is sent, and no real booking is made. Use fictional details when testing. Clinic statistics, reviews, and contact information are illustrative content.
+
+- Explore the homepage and filter the services catalog.
+- Select a treatment, date, and time in the booking flow.
+- Try the doctor and assistant dashboards, including confirmation and cancellation.
+- Inspect the source to see the full Node.js appointment API.
+
+## Run the full Node.js version locally
+
+Requires Node.js 22 or later:
+
+```sh
 npm start
 ```
 
-Then open http://localhost:3000. Stop the server with `Ctrl+C`.
+Open `http://localhost:3000`. The local version uses the API and writes appointments to `node/data/appointments.json`. It does not use the hosted demo adapter.
 
-During development, use `npm run dev` for automatic server restarts. Use
-`npm run data:reset` to clear locally stored appointments.
+```sh
+npm run dev       # development server with automatic restart
+npm test          # demo behavior checks
+npm run data:reset
+```
 
-The server implementation and its npm package live in `node/`. You can also run
-it directly with `cd node` followed by `npm start`.
+`data:reset` clears locally stored appointments.
 
-You can still open `index.html` directly in your browser when you do not need a local server.
-In VS Code, install the **Live Server** extension, right-click `index.html`,
-and choose "Open with Live Server" for auto-reload while editing.
+## Features and implementation
 
-> Note: this project loads Bootstrap, icons, fonts, and demo photos from CDNs,
-> so an internet connection is needed the first time each page loads.
+| Area | Implementation |
+| --- | --- |
+| Frontend | HTML5, CSS3, JavaScript, Bootstrap 5 |
+| Services | Category filters and responsive treatment cards |
+| Booking | Service, date/time, patient details, and live summary |
+| Dashboards | Appointment list, status changes, totals, activity, chart UI |
+| Backend | Node.js HTTP server and JSON REST endpoints |
+| Deployment | GitHub Actions → GitHub Pages static demo |
+
+```text
+public/                Website pages, styling, images, and browser scripts
+  js/demo.js           Opt-in browser-only preview adapter
+  js/demo-config.js    Disabled locally; enabled in the Pages artifact
+node/                  Node.js server and local JSON persistence
+  data/appointments.json
+  scripts/reset-data.js
+test/                  Demo API behavior tests
+docs/images/           Project screenshot
+.github/workflows/     Tests and automated website publication
+```
+
+The website loads Bootstrap, Bootstrap Icons, Chart.js, Google Fonts, and illustrative clinic photography from external services.
+
+## API
+
+- `GET /api/appointments`
+- `POST /api/appointments`
+- `PATCH /api/appointments/:id`
+- `DELETE /api/appointments/:id`
+
+See [the backend guide](node/README.md) for details.
+
+## Project scope
+
+This is a portfolio project, not a production medical system. The local backend does not provide authentication or production-grade patient-data protection. Keep it local and use test data; add authentication, server-side authorization, hardened validation, and an appropriate database before real clinic use.
+
+## Developer
+
+**Kareem Wael** · Full Stack Web Developer  
+[GitHub](https://github.com/kareemw527-svg) · [Email](mailto:kareemw527@gmail.com)
